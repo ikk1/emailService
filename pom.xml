@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.junior</groupId>
-	<artifactId>emailService</artifactId>
+	<artifactId>email-ervice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>emailService</name>
+	<name>Email Service</name>
 	<description>Simple Mail Sender Service</description>
 	<properties>
 		<java.version>17</java.version>
