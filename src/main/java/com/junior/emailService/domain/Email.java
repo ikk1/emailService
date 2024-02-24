@@ -1,4 +1,4 @@
-package com.junior.emailService.domain;
+package com.junior.emailservice.domain;
 
 public class Email {
     

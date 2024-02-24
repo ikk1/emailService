@@ -1,4 +1,4 @@
-package com.junior.emailService;
+package com.junior.emailservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

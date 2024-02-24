@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.junior</groupId>
-	<artifactId>email-ervice</artifactId>
+	<artifactId>email-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Email Service</name>
 	<description>Simple Mail Sender Service</description>

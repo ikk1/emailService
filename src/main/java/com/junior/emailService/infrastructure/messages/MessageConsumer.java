@@ -1,4 +1,4 @@
-package com.junior.emailService.infrastructure.messages;
+package com.junior.emailservice.infrastructure.messages;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.junior.emailService.domain.EmailSenderRepository;
-import com.junior.emailService.infrastructure.EmailSenderAdapter;
+import com.junior.emailservice.domain.EmailSenderRepository;
+import com.junior.emailservice.infrastructure.EmailSenderAdapter;
 
 @Component
 public class MessageConsumer {

@@ -1,10 +1,10 @@
-package com.junior.emailService.infrastructure;
+package com.junior.emailservice.infrastructure;
 
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import com.junior.emailService.domain.EmailSenderRepository;
+import com.junior.emailservice.domain.EmailSenderRepository;
 
 @Service
 public class EmailSenderAdapter implements EmailSenderRepository {
