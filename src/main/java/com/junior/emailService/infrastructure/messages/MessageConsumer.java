@@ -22,6 +22,7 @@ public class MessageConsumer {
 
     @RabbitListener(queues = "student.queue")
     public void receiveMessage(String message) throws JsonMappingException, JsonProcessingException {
+        System.out.println("Received <" + message + ">");
         StudentCreatedMessage studentCreatedMessage = objectMapper.readValue(message, StudentCreatedMessage.class);
         emailSenderRepository.sendEmail(studentCreatedMessage.getEmail(),
                 String.format("Olá %s", studentCreatedMessage.getName()), "Este é um email de teste!");
