@@ -1,4 +1,4 @@
-package com.junior.emailservice.infrastructure.messages;
+package com.junior.emailService.infrastructure.messages;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.junior.emailservice.domain.EmailSenderRepository;
-import com.junior.emailservice.infrastructure.EmailSenderAdapter;
+import com.junior.emailService.domain.EmailSenderRepository;
+import com.junior.emailService.infrastructure.EmailSenderAdapter;
 
 @Component
 public class MessageConsumer {
@@ -25,6 +25,6 @@ public class MessageConsumer {
         System.out.println("Received <" + message + ">");
         StudentCreatedMessage studentCreatedMessage = objectMapper.readValue(message, StudentCreatedMessage.class);
         emailSenderRepository.sendEmail(studentCreatedMessage.getEmail(),
-                String.format("Olá %s", studentCreatedMessage.getName()), "Este é um email de teste!");
+                String.format("Olá %s", studentCreatedMessage.getName()), "This is a test e-mail!");
     }
 }

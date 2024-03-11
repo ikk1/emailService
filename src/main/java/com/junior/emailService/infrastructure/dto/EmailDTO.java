@@ -1,4 +1,4 @@
-package com.junior.emailservice.infrastructure.dto;
+package com.junior.emailService.infrastructure.dto;
 
 public class EmailDTO {
 

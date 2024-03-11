@@ -1,6 +1,6 @@
-package com.junior.emailservice.application.usecases;
+package com.junior.emailService.application.usecases;
 
-import com.junior.emailservice.domain.EmailSenderRepository;
+import com.junior.emailService.domain.EmailSenderRepository;
 
 public class SendMailUseCaseImpl implements SendMailUseCase {
 

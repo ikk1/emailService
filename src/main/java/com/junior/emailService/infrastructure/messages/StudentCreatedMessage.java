@@ -1,4 +1,4 @@
-package com.junior.emailservice.infrastructure.messages;
+package com.junior.emailService.infrastructure.messages;
 
 import java.io.Serializable;
 
